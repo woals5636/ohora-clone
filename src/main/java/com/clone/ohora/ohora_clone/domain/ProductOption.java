@@ -9,7 +9,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "OPDTOPTION")
+@Table
 public class ProductOption {
 
     @Id

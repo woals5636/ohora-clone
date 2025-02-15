@@ -11,7 +11,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "OPDTCOLOR")
+@Table
 public class ProductColor {
 
     @EmbeddedId

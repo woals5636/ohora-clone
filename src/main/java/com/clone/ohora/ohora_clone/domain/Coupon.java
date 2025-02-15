@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "OCOUPON")
+@Table
 public class Coupon {
 
     @Id

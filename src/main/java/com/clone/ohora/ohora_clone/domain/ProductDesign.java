@@ -12,7 +12,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "OPDTDESIGN")
+@Table
 public class ProductDesign {
 
     @EmbeddedId

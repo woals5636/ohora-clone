@@ -9,7 +9,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "OCOLOR")
+@Table
 public class Color {
 
     @Id

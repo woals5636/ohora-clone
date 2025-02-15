@@ -11,7 +11,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "OPDTLINEUP")
+@Table
 public class ProductLineUp {
 
     @EmbeddedId

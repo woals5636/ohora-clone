@@ -9,7 +9,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "OCATEGORY")
+@Table
 public class Category {
 
     @Id

@@ -9,7 +9,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "OAUTH")
+@Table
 public class Authority {
 
     @Id
