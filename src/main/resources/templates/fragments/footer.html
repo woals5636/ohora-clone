@@ -1,132 +1,95 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-  <link rel="stylesheet" th:href="@{/css/footer.css}">
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
 
 <div th:fragment="footer">
-  <div id="footer">
-  <!-- 아래 필수 -->
-  <div style="margin-top: 12%"></div>
-  <div class="footer">
-    <div class="chat">
-      <div class="top_left">
-				<span class="kakao_chat"> <a
-                        href="https://www.ohora.kr/etc/CS.html">카카오톡 상담 (@ohora)</a>
-				</span> <span class="center_chat"> <a
-              href="https://www.ohora.kr/member/login.html?returnUrl=%2Fboard%2Fconsult%2Flist.html%3Fboard_no%3D9">게시판
-						상담 (1:1 문의하기)</a>
-				</span>
+  <div id="footer" class="xans-element- xans-layout xans-layout-footerpackage ">
+    <div class="inner">
+      <div class="xans-element- xans-layout xans-layout-footer cs_center "><div class="top-left">
+        <span class="kakao_chat"><a href="https://oe9lp.channel.io/home">1:1 문의하기</a></span>
+
       </div>
-      <div class="top_right">
-        <a href="https://www.instagram.com/ohora_official/" target="_blank">
-          <img src="https://www.ohora.kr/web/upload/common/ft_insta.png" />
-        </a> <a href="https://www.facebook.com/ohora.official" target="_blank">
-        <img src="https://www.ohora.kr/web/upload/common/ft_facebook.png" />
-      </a> <a href="https://pf.kakao.com/_axjYfj" target="_blank"> <img
-              src="https://www.ohora.kr/web/upload/common/ft_kakao.png" />
-      </a> <a href="https://www.youtube.com/channel/UCV72a2QWRpEZjZYkWjXHZWQ"
-              target="_blank"> <img
-              src="https://www.ohora.kr/web/upload/common/ft_youtube.png" />
-      </a> <a href="https://post.naver.com/my.nhn?memberNo=47439708"
-              target="_blank"> <img
-              src="https://www.ohora.kr/web/upload/common/ft_naver.png" />
-      </a>
-      </div>
-    </div>
-    <br />
-    <div class="line"></div>
-    <div class="center_menu">
-      <div class="list" id="a">
-        주문
-        <div class="sub" id="aa">
-          <a href="https://www.ohora.kr/member/login.html?returnUrl=/myshop/order/list.html">주문·배송내역</a>
-          <br/><br />
-          <a href="https://www.ohora.kr/member/login.html?returnUrl=/myshop/order/list.html?mode=cs">취소/교환/반품내역</a>
-          <br/><br/>
-          <a href="https://www.ohora.kr/order/basket.html">장바구니</a>
+        <div class="top_right">
+          <a href="https://www.instagram.com/ohora_official/" target="_blank">
+            <img src="https://www.ohora.kr/web/upload/common/ft_insta.png" />
+          </a> <a href="https://www.facebook.com/ohora.official" target="_blank">
+          <img src="https://www.ohora.kr/web/upload/common/ft_facebook.png" />
+        </a> <a href="https://pf.kakao.com/_axjYfj" target="_blank"> <img
+                src="https://www.ohora.kr/web/upload/common/ft_kakao.png" />
+        </a> <a href="https://www.youtube.com/channel/UCV72a2QWRpEZjZYkWjXHZWQ"
+                target="_blank"> <img
+                src="https://www.ohora.kr/web/upload/common/ft_youtube.png" />
+        </a> <a href="https://post.naver.com/my.nhn?memberNo=47439708"
+                target="_blank"> <img
+                src="https://www.ohora.kr/web/upload/common/ft_naver.png" />
+        </a>
         </div>
       </div>
-    </div>
-    <div class="line"></div>
-    <div class="center_menu">
-      <div class="list" id="b">
-        회원
-        <div class="sub" id="bb">
-          <a href="#">신규 혜택</a><br /> <br /> <a href="#">멤버십 혜택</a><br />
-          <br /> <a th:href="@{/member/mypage/mypage.htm}">마이페이지</a><br />
-          <br /> <a href="#">적립금·쿠폰내역</a><br /> <br /> <a href="#">회원정보변경</a>
-        </div>
+
+
+      <div class="footer_menu">
+        <ul>
+          <li class="list">
+            <span>주문<a class="arr"><i class="fas fa-chevron-down"></i></a></span>
+            <ul class="sub" style="overflow: hidden; display: none;">                        <li class="xans-element- xans-layout xans-layout-statelogoff "><a href="/member/login.html?returnUrl=/myshop/order/list.html">주문·배송내역</a>
+            </li>
+              <li class="xans-element- xans-layout xans-layout-statelogoff "><a href="/member/login.html?returnUrl=/myshop/order/list.html?mode=cs">취소/교환/반품내역</a>
+              </li>
+              <li><a href="/order/basket.html">장바구니</a></li>
+            </ul>
+          </li>
+          <li class="list">
+            <span>회원<a class="arr"><i class="fas fa-chevron-down"></i></a></span>
+            <ul class="sub">
+              <li><a href="/article/notice/1/4609/">신규 혜택</a></li>
+              <li><a href="https://ohora2019.cafe24.com/article/notice/14/231291/">멤버십 혜택</a></li>
+              <li class="xans-element- xans-layout xans-layout-statelogoff "><a href="/member/login.html?returnUrl=/myshop/index.html">마이페이지</a>
+              </li>
+              <li class="xans-element- xans-layout xans-layout-statelogoff "><a href="/member/login.html?returnUrl=/myshop/mileage/mileageList.html">적립금·쿠폰내역</a>
+              </li>
+              <li><a href="/member/modify.html">회원정보변경</a></li>
+            </ul>
+          </li>
+          <li class="list">
+            <span>서비스<a class="arr"><i class="fas fa-chevron-down"></i></a></span>
+            <ul class="sub">
+              <!--li><a href="/board/faq.html">FAQ</a></li-->
+              <li><a href="/board/free/list.html?board_no=3">FAQ</a></li>
+              <li><a href="https://oe9lp.channel.io/home">상담톡</a></li> <!--/etc/CS.html -->
+              <li><a href="/board/gallery/list.html?board_no=13">사용법</a></li>
+              <li><a href="https://www.ohora.kr/board/free/list.html?board_no=14">공지사항</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="company">
+        <ul class="xans-element- xans-layout xans-layout-footer "><li>
+          <span>대표 : 유기현</span>회사 : 주식회사 글루가</li>
+          <li>주소 : 충남 천안시 서북구 2공단8길 45 2층 (업성동)</li>
+          <li>사업자등록번호 : 722-87-00061</li>
+          <li>
+            <span>통신판매업신고번호 : 2017-충남천안-1055호</span><a href="#none" class="co" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=7228700061', 'bizCommPop', 'width=750, height=950;');return false;">사업자 정보 확인</a>
+          </li>
+          <!-- <a href="#none" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=7228700061', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a> 사업자정보 호출어 -->
+          <li>개인정보처리담당자 : <a href="mailto:taegyoo.yoo@ohora.com">유태규</a>
+          </li>
+          <li>고객센터 : 1566-0554</li>
+          <li>평일 09:00~18:00 (Lunch 12:30~13:30)
+          </li>
+          <li>영업문의 : ohora_official@ohora.com</li>
+          <li>제휴 &amp; 파트너십 문의 : ohora_partnership@ohora.com</li>
+          <li>글로벌 제휴 &amp; 파트너십 문의 : Global-Business@ohora.com</li>
+        </ul>
+      </div>
+
+
+      <div class="info_area">
+        <a href="/brandstory/brandstory.html">브랜드 소개</a> <!-- /shopinfo/company.html -->
+        <a href="/member/agreement.html">이용약관</a>
+        <a href="/member/privacy.html" style="color:#fffec7;">개인정보처리방침</a>
+        <!--a href="/board/free/list.html?board_no=14">공지</a-->
+        <!--a href="#none" onclick="javascript:isPCver();" class="btnUtil">PC버전</a-->
       </div>
     </div>
-    <div class="line"></div>
-    <div class="center_menu">
-      <div class="list" id="c">
-        서비스
-        <div class="sub" id="cc">
-          <a th:href="@{/board/faqlist.do}">FAQ</a><br/><br/>
-          <a th:href="@{https://oe9lp.channel.io/home}">상담톡</a><br/><br/>
-          <a th:href="@{/howto.do?howto=main}">사용법</a><br/><br/>
-          <a th:href="@{/board/noticelist.do}">공지사항</a>
-        </div>
-      </div>
-    </div>
-    <div class="line"></div>
-    <div class="company">
-      <p>
-        대표 : 유기현<br /> 회사 : 주식회사 글루가<br /> 주소 : 충남 천안시 서북구 2공단8길 45 2층
-        (업성동)<br /> 사업자등록번호 : 722-87-00061<br /> 통신판매업신고번호 :
-        2017-충남천안-1055호 사업자 정보 확인<br /> 개인정보처리담당자 : 유태규<br /> 고객센터 :
-        1566-0554<br /> 평일 09:00~18:00 (Lunch 12:30~13:30)<br /> 영업문의 :
-        ohora_official@ohora.com<br /> 제휴 & 파트너십 문의 :
-        ohora_partnership@ohora.com<br /> 글로벌 제휴 & 파트너십 문의 :
-        Global-Business@ohora.com
-      </p>
-    </div>
-    <div class="line"></div>
-    <div class="bottom">
-      <span class="a"><a th:href="@{/ohora_Fend_brand4.do}">브랜드 소개</a>
-      </span> <span class="b"><a href="#">이용약관</a></span> <span class="c">
-      <a href="#">개인정보처리방침</a></span>
-    </div>
-  </div>
-  <script>
-    let sw = true;
-
-    let a = document.querySelector("#a");
-    let aa = document.querySelector("#aa");
-    a.onclick = function() {
-        if (sw) {
-            aa.style.display = "block";
-        } else if (!sw) {
-            aa.style.display = "none";
-        }
-        sw = !sw;
-    }
-
-    let b = document.querySelector("#b");
-    let bb = document.querySelector("#bb");
-    b.onclick = function() {
-        if (sw) {
-            bb.style.display = "block";
-        } else if (!sw) {
-            bb.style.display = "none";
-        }
-        sw = !sw;
-    }
-
-    let c = document.querySelector("#c");
-    let cc = document.querySelector("#cc");
-    c.onclick = function() {
-        if (sw) {
-            cc.style.display = "block";
-        } else if (!sw) {
-            cc.style.display = "none";
-        }
-        sw = !sw;
-    }
-  </script>
   </div>
 </div>

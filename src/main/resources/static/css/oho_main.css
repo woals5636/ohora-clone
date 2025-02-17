@@ -1048,26 +1048,15 @@ font-weight: 500;
     position: absolute;
 }
 
-
 .magazine-slide-wrap{
     margin: 0;
     border: 0;
 
 }
-
-.magazine-thumb{
-
-}
-
 .magazine-swiper-item{
     max-width: 100%;
 }
 
-/* 오호라 매거진 이쪽은 나중에.. 아님 직접 만들어야할듯 */
-
-.bot_banner-container{
-
-}
 .aboutOhora{
     background-color: #964e50;
 
@@ -1117,7 +1106,6 @@ font-weight: 500;
 
 .aboutMembership{
     background-color: #3d3d3d;
-
     display: block;
     padding: 77px 25px 70px;
     box-sizing: border-box;
@@ -1125,8 +1113,6 @@ font-weight: 500;
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
-
-
 }
 
 .aboutMem-wrap{
@@ -1142,7 +1128,6 @@ font-weight: 500;
 
 .aboutMem-wrap> p {
     padding: 25px 0 48px;
-
     font-size: 16px;
     line-height: 1;
     font-weight: 400;

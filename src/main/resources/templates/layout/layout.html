@@ -3,14 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>공통 레이아웃</title>
+  <link rel="stylesheet" th:href="@{/css/header.css}">
+  <link rel="stylesheet" th:href="@{/css/footer.css}">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!--header JS-->
+  <script th:src="@{/js/header.js}"></script>
 </head>
 <body>
 
 <!-- 공통 헤더 -->
 <div th:replace="~{fragments/header :: header}"></div>
 
-<!-- 페이지별 콘텐츠 -->
-<div th:fragment="content">
+<!-- 개별 페이지 내용 -->
+<div th:replace="~{::content}">
   <p>기본 콘텐츠 (각 페이지에서 덮어씌워짐)</p>
 </div>
 
