@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+  <link rel="stylesheet" th:href="@{/css/footer.css}">
   <meta charset="UTF-8">
   <title>Title</title>
 </head>
 
-<div th:fragment="footer" id="footer">
+<div th:fragment="footer">
+  <div id="footer">
   <!-- 아래 필수 -->
   <div style="margin-top: 12%"></div>
   <div class="footer">
@@ -126,5 +128,5 @@
         sw = !sw;
     }
   </script>
-
+  </div>
 </div>

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+  <link rel="stylesheet" th:href="@{/css/header.css}">
   <meta charset="UTF-8">
   <title>Title</title>
 </head>
 
-<div th:fragment="header" id="header">
+<div th:fragment="header">
+  <div id="header">
   <div class="SP_topBanner" style="display: block">
     <div class="SP_layoutMin">
       <div class="SP_topBn_inr"></div>
@@ -43,7 +45,7 @@
                   class="xans-element- xans-layout xans-layout-statelogoff SP_gnb_inr">
 
             <!-- 비회원 사용자 -->
-            <sec:authorize access="isAnonymous()">
+            <!--<sec:authorize access="isAnonymous()">
               <a href="${contextPath}/member/joinus/join.htm" class="auth-link">
                 <span class="title">회원가입&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</span>
               </a>
@@ -52,21 +54,21 @@
               </a>
             </sec:authorize>
 
-            <!-- 관리자 사용자 -->
+            &lt;!&ndash; 관리자 사용자 &ndash;&gt;
             <sec:authorize access="hasRole('ROLE_ADMIN')">
               <a href="${contextPath}/admin/productList.htm">
                 <span class="title">마이페이지</span>
               </a>
             </sec:authorize>
 
-            <!-- 일반 사용자 -->
+            &lt;!&ndash; 일반 사용자 &ndash;&gt;
             <sec:authorize access="hasRole('ROLE_USER') and !hasRole('ROLE_ADMIN')">
               <a href="${contextPath}/member/mypage/mypage.htm">
                 <span class="title">마이페이지</span>
               </a>
             </sec:authorize>
 
-            <!-- 인증된 사용자 (공통 표시) -->
+            &lt;!&ndash; 인증된 사용자 (공통 표시) &ndash;&gt;
             <sec:authorize access="isAuthenticated()">
               <a class="log" style="cursor: pointer;"><span class="title">로그아웃</span></a>
               <form id="logoutForm" action="${contextPath}/member/joinus/logout.htm" method="post" style="display: none;">
@@ -80,7 +82,7 @@
                           });
                     });
               </script>
-            </sec:authorize>
+            </sec:authorize>-->
             <!-- <script>
                 <sec:authorize access="isAuthenticated()">
                     let userid = '<sec:authentication property="principal.user.userid"/>';
@@ -470,5 +472,5 @@
 
   </script>
 
-
+  </div>
 </div>

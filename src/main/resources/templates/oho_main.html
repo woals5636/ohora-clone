@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/oho_main.css}">
+    <script th:src="@{/js/oho_main.js}"></script>
 </head>
+<body>
 
-<div th:fragment="content" id="content">
+<div th:replace="~{layout/layout}">
+    <th:block th:fragment="content">
     <div class="main_container">
         <!-- 메인 배너 (메인 이미지 - 스와이프) 영역 -->
         <div class="mainSwipeBanner">
@@ -389,13 +393,12 @@
             <span>자세히 보기 &gt;</span>
         </div>
     </a>
-
-    </div>
+        </div>
+    </th:block>
 </div>
 <!-- 메인 전체 컨테이너 -->
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script th:src="@{/resources/js/oho_main.js}"></script>
 
 <!-- Initialize Swiper -->
 
@@ -621,3 +624,5 @@
     }
 
 </script>
+</body>
+</html>

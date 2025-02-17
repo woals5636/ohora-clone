@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>공통 레이아웃</title>
+</head>
+<body>
+
+<!-- 공통 헤더 -->
+<div th:replace="~{fragments/header :: header}"></div>
+
+<!-- 페이지별 콘텐츠 -->
+<div th:fragment="content">
+  <p>기본 콘텐츠 (각 페이지에서 덮어씌워짐)</p>
+</div>
+
+<!-- 공통 푸터 -->
+<div th:replace="~{fragments/footer :: footer}"></div>
+
+</body>
+</html>
